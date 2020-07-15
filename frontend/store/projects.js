@@ -21,7 +21,7 @@ export const getters = {
     if (state.current.project_type === 'DocumentClassification') {
       return 'doc_annotations__isnull'
     } else if (state.current.project_type === 'SequenceLabeling') {
-      return 'seq_annotations__isnull'
+      return 'annotations_approved_by__isnull'
     } else if (state.current.project_type === 'Seq2seq') {
       return 'seq2seq_annotations__isnull'
     } else {
